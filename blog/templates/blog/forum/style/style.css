@@ -1,0 +1,21 @@
+#forums {
+  margin-left: 25%;
+  margin-top: -682px;
+  background-color: #fff;
+  width: 73.5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#forums h3 {
+  padding: 1%;
+  color: black;
+  text-decoration: underline;
+}
+
+#forums h5 {
+  padding-left: 1%;
+  padding-top: 0.25%;
+  padding-bottom: 0.25;
+  color: green;
+  text-decoration: underline;
+}
