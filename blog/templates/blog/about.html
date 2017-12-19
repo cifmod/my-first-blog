@@ -1,0 +1,72 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{% static 'style/style.css' %}">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'style/favicon.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'style/favicon.png' %}">
+  <title>ConexãoIF</title>
+  <meta name="keywords" content="if, instituto federal, ifc, ifc blumenau, pi, projeto integrador">
+  <meta name="authors" content="Ana Kuster, Daniel Kratz, Gabrielle da Silva, Henrique Pereira (Hlcpereira)">
+</head>
+<body style="background-color: #D3D3D3;">
+  <!-- Hamburguer Menu -->
+  <input type="checkbox" id="navicon">
+  <div class="nav-toggle">
+  <label for="navicon" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  </div>
+  <nav class="sidebar" role="complementary">
+    <ul class="menu">
+       <img id="logo_img" src="{% static 'style/logo.png' %}" style="width: 100%;" atl="logo_cif_menu">
+       <span id="underline_menu" class="underline"></span>
+       <li><a href="{% url 'home' %}">Home</a>
+       <li><a href="{% url 'forum' %}">Fóruns</a>
+       <li><a href="{% url 'about' %}">Sobre</a>
+    </ul>
+  </nav>
+  <!-- End of the Hamburguer Menu -->
+  <!-- Body Head -->
+    <img id="logo" src="{% static 'style/logo2.png' %}" style="width: 30%; margin-bottom: -0.5%; margin-top: -0.5%;  margin-left: 35%;" alt="logo_conexãoif">
+  <!-- End of Body Head -->
+  <!-- Misc -->
+  <div id="barra">
+    <p id="Login"><a href="#" style="text-decoration: none; color: white;">Login</a></p>
+  </div>
+  <div class="Part_team_column_white">
+    <div class="part_team_of_white">
+      <div id="info_kuster">
+        <img id="image_team_kuster" src="{% static 'style/kuster.jpg' %}" alt="AK">
+        <p style="font-size: 15px"><b>Ana Kuster</b><br>Lider do projeto | Fundadora</p>
+      </div>
+      <div id="info_henrique">
+        <img id="image_team_Henrique" src="{% static 'style/henrique.jpg' %}" alt="HP">
+        <p style="font-size: 15px"><b>Henrique Pereira</b><br>Co-Lider do projeto | Co-Fundador</p>
+      </div>
+      <div id="info_kuster">
+        <img id="image_team_daniel" src="{% static 'style/daniel.jpg' %}" alt="DK">
+        <p style="font-size: 15px"><b>Daniel Kratz</b><br>Co-Lider do projeto | Co-Fundador</p>
+      </div>
+      <div id="info_henrique">
+        <img id="image_team_gabs" src="{% static 'style/gabs.jpg' %}" alt="GC">
+        <p style="font-size: 15px"><b>Gabriele Cristina</b><br>Co-Lider do projeto | Co-Fundadora</p>
+      </div>
+      <br>
+      <br>
+    </div>
+  </div>
+  <!-- End of Misc -->
+  <!-- Footer -->
+  <footer style="margin-top: 2.5%;">
+    <center>
+      <p style="font-size:10px; padding-bottom: 10px;">&copy 2017 Copyright: ConexãoIF | Website developed for school purproses</p>
+    </center>
+  </footer>
+  <!-- End of Footer -->
+</body>
